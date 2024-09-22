@@ -25,7 +25,7 @@
 					<Converter 
 						title="Xp points to levels"
 						input-label="Xp points"
-						output-label="Levels"
+						output-label="Equals Level 0 to"
 						:conversion-function="xpPointsToLevels"
 					></Converter>
 	
