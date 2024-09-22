@@ -41,13 +41,13 @@
 						<td class="actions-needed">
 							<template v-if="xpPointsNeeded > 0">
 								<template v-if="Array.isArray(sourceObj.xpPerAction)">
-									{{ Math.round(xpPointsNeeded / sourceObj.xpPerAction[1]) }}
+									{{ Math.ceil(xpPointsNeeded / sourceObj.xpPerAction[1]) }}
 									to
-									{{ Math.round(xpPointsNeeded / sourceObj.xpPerAction[0]) }}
+									{{ Math.ceil(xpPointsNeeded / sourceObj.xpPerAction[0]) }}
 								</template>
 								
 								<template v-else>
-									{{ Math.round(xpPointsNeeded / sourceObj.xpPerAction) }}
+									{{ Math.ceil(xpPointsNeeded / sourceObj.xpPerAction) }}
 								</template>
 
 							</template>
